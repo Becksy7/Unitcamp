@@ -772,7 +772,7 @@
             </a>
 
 
-            <div class="parents">
+           <!-- <div class="parents">
                 <form class="parents__form" id="p-subscribe" name="mail">
                     <div class="parents__icon"><img src="img/papa-mama.png"></div>
                     <div class="form-group">
@@ -801,33 +801,31 @@
                     Мы отправили приглашение по указаному адресу.<br/>
                 </div>
             </div>
+            -->
             <div class="program-detail">
-                <form class="program-detail__form" id="p-subscribe2" name="mail">
-                    <div class="parents__icon"><img src="img/papa-mama.png"></div>
+                <form class="program-detail__form" id="p-subscribe" name="mail">
+                    <div class="program-detail__icon"><img src="img/icon-mail.svg"></div>
                     <div class="form-group">
-                        <label>Расскажи родителям:</label>
+                        <label>Выслать подробную  программу на почту</label>
                         <div class="hint-wrap">
                             <input type="text" class="form-control" name="email" onkeyup="checkEmailRealTime(this)"
-                                   placeholder="Email Мамы или Папы">
+                                   placeholder="Email">
                             <span class="callback__hint-error-empty" data-toggle="tooltip" data-placement="top"
                                   title="Вы не заполнили обязательное поле"></span>
-                            <span class="callback__hint-error" data-toggle="tooltip" data-placement="top" title="Вы использовали недопустимый символ.
-Допускаются: 0-1, A-z, A-я, -, _, ., @"></span>
+                            <span class="callback__hint-error" data-toggle="tooltip" data-placement="top"
+                                  title="Вы использовали недопустимый символ. Допускаются: 0-1, A-z, A-я, -, _, ., @"></span>
                             <span class="callback__hint-error-address" data-toggle="tooltip" data-placement="top"
-                                  title="Укажите корректный почтовый адрес.
-Например: почта@yandex.ru"></span>
+                                  title="Укажите корректный почтовый адрес. Например: почта@yandex.ru"></span>
+                            <div class="program-detail__secret">Мы не передаем вашу контактную информацию третьим лицам.</div>
                         </div>
                         <span class="callback__valid"></span>
-
-                        <button type="submit" class="parents__btn btn btn-default">Рассказать</button>
-                        <div class="parents__sicret">Мы не передаем вашу контактную информацию третьим лицам.</div>
+                        <button type="submit" class="program-detail__btn btn btn-default">Выслать</button>
                     </div>
-
-
                     <input type="hidden" name="utm_source" value="yandex_search">
                 </form>
-                <div class="subscribe-done">
-                    Мы отправили приглашение по указаному адресу.<br/>
+                <div class="subscribe-done program-detail__subscribe-done">
+                    <div class="program-detail__sucsess-icon"><img src="img/subscribe.png"></div>
+                    <p>Вы успешно подписаны. <br> Мы вышлем программу на email <span>“info@gmail.com”</span></p>
                 </div>
             </div>
 
