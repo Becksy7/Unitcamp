@@ -1,0 +1,119 @@
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.info-block {
+  *zoom: 1;
+  text-align: left;
+  line-height: 22px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+.info-block:before,
+.info-block:after {
+  content: " ";
+  display: table;
+}
+.info-block:after {
+  clear: both;
+}
+@media (max-width: 321px) {
+  .info-block {
+    min-height: 430px;
+    background-position: top left;
+    padding-bottom: 165px;
+    position: relative;
+    background-size: 100px 250px;
+  }
+}
+.info-block .info-left,
+.info-block .info-right {
+  width: 320px;
+  padding-top: 40px;
+  height: 565px;
+  background-color: rgba(32, 41, 46, 0.7);
+}
+.info-block .info-left h2,
+.info-block .info-right h2 {
+  font-family: 'PF DIN TEXT PRO';
+  color: #b5cc88;
+  text-transform: none;
+  font-size: 24px;
+}
+.info-block .info-body {
+  height: 565px;
+  float: none;
+  margin: 0 320px;
+}
+.info-block .info-body img {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 769px) {
+  .info-block .info-body {
+    float: right;
+    width: 50%;
+    margin: 0;
+  }
+}
+@media (max-width: 321px) {
+  .info-block .info-body {
+    float: none;
+    width: 100%;
+    min-height: 245px;
+    max-height: 420px;
+  }
+}
+.info-block .info-left {
+  float: left;
+  padding-left: 80px;
+  padding-right: 35px;
+  overflow: hidden;
+}
+@media (max-width: 769px) {
+  .info-block .info-left {
+    width: 50%;
+    padding-top: 50px;
+    padding-left: 75px;
+  }
+}
+@media (max-width: 321px) {
+  .info-block .info-left {
+    float: none;
+    width: 100%;
+    padding: 25px 15px;
+    height: 165px;
+    position: absolute;
+    bottom: 0;
+  }
+  .info-block .info-left h2 {
+    font-size: 18px;
+  }
+  .info-block .info-left p {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 10px;
+    display: none;
+  }
+  .info-block .info-left p:first-of-type {
+    display: block;
+  }
+}
+.info-block .info-right {
+  float: right;
+  padding-right: 80px;
+  padding-left: 35px;
+}
+@media (max-width: 769px) {
+  .info-block .info-right {
+    display: none;
+  }
+}
