@@ -63,6 +63,7 @@
     <link rel="stylesheet" href="css/lightbox.css">
     <link rel="stylesheet" href="css/placebox.css">
     <link rel="stylesheet" href="css/info-block.css">
+    <link rel="stylesheet" href="css/program-detail.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/map-slider.css">
@@ -800,6 +801,35 @@
                     Мы отправили приглашение по указаному адресу.<br/>
                 </div>
             </div>
+            <div class="program-detail">
+                <form class="program-detail__form" id="p-subscribe2" name="mail">
+                    <div class="parents__icon"><img src="img/papa-mama.png"></div>
+                    <div class="form-group">
+                        <label>Расскажи родителям:</label>
+                        <div class="hint-wrap">
+                            <input type="text" class="form-control" name="email" onkeyup="checkEmailRealTime(this)"
+                                   placeholder="Email Мамы или Папы">
+                            <span class="callback__hint-error-empty" data-toggle="tooltip" data-placement="top"
+                                  title="Вы не заполнили обязательное поле"></span>
+                            <span class="callback__hint-error" data-toggle="tooltip" data-placement="top" title="Вы использовали недопустимый символ.
+Допускаются: 0-1, A-z, A-я, -, _, ., @"></span>
+                            <span class="callback__hint-error-address" data-toggle="tooltip" data-placement="top"
+                                  title="Укажите корректный почтовый адрес.
+Например: почта@yandex.ru"></span>
+                        </div>
+                        <span class="callback__valid"></span>
+
+                        <button type="submit" class="parents__btn btn btn-default">Рассказать</button>
+                        <div class="parents__sicret">Мы не передаем вашу контактную информацию третьим лицам.</div>
+                    </div>
+
+
+                    <input type="hidden" name="utm_source" value="yandex_search">
+                </form>
+                <div class="subscribe-done">
+                    Мы отправили приглашение по указаному адресу.<br/>
+                </div>
+            </div>
 
             <div class="info-box clearfix">
                 <div class="info-box__item">
@@ -1194,7 +1224,7 @@
                                 </div>
                             </div>
                             <div class="item">
-                                <div class="info-block" style="background: url('img/placebox/pool-bg.jpg')">
+                                <div class="info-block" style="background-image: url('img/placebox/pool-bg.jpg')">
                                     <div class="info-left">
                                         <h2>Бассейн</h2>
                                         <p>Руководитель и организатор квестов компании Questime,

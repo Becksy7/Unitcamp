@@ -1,0 +1,169 @@
+.program-detail {
+    &__icon {
+      display: inline-block;
+      float: left;
+      margin-top: 13px;
+      @media (max-width: 767px) {
+        display: block;
+        float: none;
+        margin: 0 auto 10px;
+        width: 76px;
+        height: 76px;
+        line-height: 76px;
+        text-align: center;
+        background: url("../img/responsive/border.svg") no-repeat;
+        .background-size(76px 76px);
+        img {
+          display: inline-block;
+          width: 40px;
+        }
+      }
+    }
+    &__form {
+      color: #000;
+      font-size: 18px;
+      max-width: 700px;
+      margin: 30px auto;
+      @media (max-width: 767px) {
+        width: 100%;
+      }
+      .hint-wrap {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        max-width: 450px;
+        @media (max-width: 767px) {
+          display: block;
+          margin: 0px auto 15px;
+        }
+      }
+      .callback__hint-error {
+        right: 5px;
+        top: 7px;
+      }
+      .callback__valid {
+        right: 5px;
+        top: 7px;
+        @media (max-width: 767px) {
+          right: 5px;
+          top: 7px;
+        }
+      }
+      .callback__hint-error-empty, .callback__hint-error-address {
+        right: 5px;
+        top: 7px;
+
+      }
+
+      .form-group {
+        margin-left: 64px;
+        @media (max-width: 767px) {
+          margin-left: 0px;
+        }
+      }
+      label {
+        font-size: 17px;
+        font-weight: 400;
+        margin-bottom: 0;
+        display: block;
+        text-align: left;
+        @media (max-width: 767px) {
+          overflow: hidden;
+          max-width: 450px;
+          font-size: 24px;
+          text-align: center;
+          margin: 0px auto 10px;
+        }
+      }
+    }
+    input {
+      border-color: #8896ac;
+      border-radius: 3px;
+      border-style: solid;
+      border-width: 1px;
+      box-sizing: border-box;
+      color: #999999;
+      display: inline-block;
+      font-family: 'PF DIN TEXT PRO';
+      font-size: 18px;
+      font-weight: 400;
+      height: 39px;
+      margin: 0 3px 0 0;
+      text-align: left;
+      vertical-align: top;
+      width: 100%;
+      max-width: 450px;
+    }
+
+    &__btn {
+      color: #fff;
+      font-family: 'PF DIN TEXT PRO';
+      font-size: 18px;
+      height: 38px;
+      vertical-align: top;
+      width: 158px;
+      border-color: #376bc1;
+      text-shadow: none;
+      border-bottom: 2px solid #172c4a;
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5a8ed4+0,5388d1+23,3e74c6+70,366ac0+100 */
+      background: rgb(90, 142, 212); /* Old browsers */
+      background: -moz-linear-gradient(top, rgba(90, 142, 212, 1) 0%, rgba(83, 136, 209, 1) 23%, rgba(62, 116, 198, 1) 70%, rgba(54, 106, 192, 1) 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, rgba(90, 142, 212, 1) 0%, rgba(83, 136, 209, 1) 23%, rgba(62, 116, 198, 1) 70%, rgba(54, 106, 192, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, rgba(90, 142, 212, 1) 0%, rgba(83, 136, 209, 1) 23%, rgba(62, 116, 198, 1) 70%, rgba(54, 106, 192, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5a8ed4', endColorstr='#366ac0', GradientType=0); /* IE6-9 */
+
+      box-shadow: none;
+      &:hover, &:hover:focus, &:hover:active {
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5a8ed4+0,5388d1+23,3e74c6+70,366ac0+100 */
+        background: rgb(90, 142, 212); /* Old browsers */
+        background: -moz-linear-gradient(top, rgba(90, 142, 212, 1) 0%, rgba(83, 136, 209, 1) 23%, rgba(62, 116, 198, 1) 70%, rgba(54, 106, 192, 1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(90, 142, 212, 1) 0%, rgba(83, 136, 209, 1) 23%, rgba(62, 116, 198, 1) 70%, rgba(54, 106, 192, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(90, 142, 212, 1) 0%, rgba(83, 136, 209, 1) 23%, rgba(62, 116, 198, 1) 70%, rgba(54, 106, 192, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5a8ed4', endColorstr='#366ac0', GradientType=0); /* IE6-9 */
+
+        border-color: darken(#376bc1, 2%);
+        border-bottom: 2px solid #172c4a;
+        opacity: 0.9;
+      }
+      &:focus, &:active {
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5a8ed4+0,5388d1+23,3e74c6+70,366ac0+100 */
+        background: rgb(90, 142, 212); /* Old browsers */
+        background: -moz-linear-gradient(top, rgba(90, 142, 212, 1) 0%, rgba(83, 136, 209, 1) 23%, rgba(62, 116, 198, 1) 70%, rgba(54, 106, 192, 1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(90, 142, 212, 1) 0%, rgba(83, 136, 209, 1) 23%, rgba(62, 116, 198, 1) 70%, rgba(54, 106, 192, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(90, 142, 212, 1) 0%, rgba(83, 136, 209, 1) 23%, rgba(62, 116, 198, 1) 70%, rgba(54, 106, 192, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5a8ed4', endColorstr='#366ac0', GradientType=0); /* IE6-9 */
+
+        border-color: darken(#376bc1, 2%);
+        border-bottom: 2px solid #172c4a;
+      }
+      @media (max-width: 767px) {
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+        display: block;
+        height: 50px;
+      }
+    }
+    &__sicret {
+      color: #9eaec7;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 16px;
+      margin: 5px 0 0;
+      text-align: left;
+      @media (max-width: 767px) {
+        text-align: center;
+      }
+    }
+    .subscribe-done {
+      position: relative;
+      top: auto;
+      left: auto;
+      color: #000000;
+      margin: 0px auto;
+      @media (max-width: 767px) {
+        width: 100%;
+        max-width: 400px;
+      }
+    }
+}
