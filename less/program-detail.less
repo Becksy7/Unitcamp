@@ -31,7 +31,7 @@
       @media (max-width: 767px) {
           max-width: 235px;
       }
-      @media (max-width: 321px) {
+      @media (max-width: 430px) {
         max-width: 175px;
       }
     }
@@ -90,7 +90,7 @@
       @media (max-width: 767px) {
         max-width: 235px;
       }
-      @media (max-width: 321px) {
+      @media (max-width: 430px) {
         max-width: 175px;
       }
     }
@@ -98,14 +98,17 @@
   &__icon {
     width: 70px;
     height: 70px;
-    padding-top: 15px;
+    line-height: 70px;
+    font-size: 24px;
+    color: #ff4800;
     margin: 35px auto;
     text-align: center;
     background: url('../img/circle-bg.png') no-repeat center center;
     @media (max-width: 767px) {
+      color: #447bcb;
       margin-bottom: 15px;
     }
-    @media (max-width: 321px) {
+    @media (max-width: 430px) {
       margin-bottom: 5px;
     }
   }
@@ -136,7 +139,43 @@
     width: 158px;
     text-shadow: none;
     margin-top: 6px;
-    @media (max-width: 321px) {
+    @media (max-width: 767px) {
+      border-color: #376bc1;
+      text-shadow: none;
+      border-bottom: 2px solid #172c4a;
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5a8ed4+0,5388d1+23,3e74c6+70,366ac0+100 */
+      background: rgb(90, 142, 212); /* Old browsers */
+      background: -moz-linear-gradient(top, rgba(90, 142, 212, 1) 0%, rgba(83, 136, 209, 1) 23%, rgba(62, 116, 198, 1) 70%, rgba(54, 106, 192, 1) 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, rgba(90, 142, 212, 1) 0%, rgba(83, 136, 209, 1) 23%, rgba(62, 116, 198, 1) 70%, rgba(54, 106, 192, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, rgba(90, 142, 212, 1) 0%, rgba(83, 136, 209, 1) 23%, rgba(62, 116, 198, 1) 70%, rgba(54, 106, 192, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5a8ed4', endColorstr='#366ac0', GradientType=0); /* IE6-9 */
+
+      box-shadow: none;
+      &:hover, &:hover:focus, &:hover:active {
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5a8ed4+0,5388d1+23,3e74c6+70,366ac0+100 */
+        background: rgb(90, 142, 212); /* Old browsers */
+        background: -moz-linear-gradient(top, rgba(90, 142, 212, 1) 0%, rgba(83, 136, 209, 1) 23%, rgba(62, 116, 198, 1) 70%, rgba(54, 106, 192, 1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(90, 142, 212, 1) 0%, rgba(83, 136, 209, 1) 23%, rgba(62, 116, 198, 1) 70%, rgba(54, 106, 192, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(90, 142, 212, 1) 0%, rgba(83, 136, 209, 1) 23%, rgba(62, 116, 198, 1) 70%, rgba(54, 106, 192, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5a8ed4', endColorstr='#366ac0', GradientType=0); /* IE6-9 */
+
+        border-color: darken(#376bc1, 2%);
+        border-bottom: 2px solid #172c4a;
+        opacity: 0.9;
+      }
+      &:focus, &:active {
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5a8ed4+0,5388d1+23,3e74c6+70,366ac0+100 */
+        background: rgb(90, 142, 212); /* Old browsers */
+        background: -moz-linear-gradient(top, rgba(90, 142, 212, 1) 0%, rgba(83, 136, 209, 1) 23%, rgba(62, 116, 198, 1) 70%, rgba(54, 106, 192, 1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(90, 142, 212, 1) 0%, rgba(83, 136, 209, 1) 23%, rgba(62, 116, 198, 1) 70%, rgba(54, 106, 192, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(90, 142, 212, 1) 0%, rgba(83, 136, 209, 1) 23%, rgba(62, 116, 198, 1) 70%, rgba(54, 106, 192, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5a8ed4', endColorstr='#366ac0', GradientType=0); /* IE6-9 */
+
+        border-color: darken(#376bc1, 2%);
+        border-bottom: 2px solid #172c4a;
+      }
+    }
+    @media (max-width: 430px) {
       font-size: 14px;
       width: 115px;
     }
@@ -155,7 +194,7 @@
     p {
       font-size: 24px;
     }
-    @media (max-width: 767px) {
+    @media (max-width: 430px) {
       width: 100%;
     }
   }
