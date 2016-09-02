@@ -209,6 +209,10 @@
   padding-right: 35px;
   overflow: hidden;
 }
+.info-block--horizontal .info-left.center {
+  left: 320px;
+  width: 350px;
+}
 @media (max-width: 769px) {
   .info-block--horizontal .info-left {
     width: 100%;
