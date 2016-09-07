@@ -103,14 +103,16 @@
   }
 }
 .info-block .info-left,
-.info-block .info-right {
+.info-block .info-right,
+.info-block .info {
   width: 320px;
   padding-top: 40px;
   height: 565px;
   background-color: rgba(32, 41, 46, 0.7);
 }
 .info-block .info-left h2,
-.info-block .info-right h2 {
+.info-block .info-right h2,
+.info-block .info h2 {
   font-family: 'PF DIN TEXT PRO';
   color: #b5cc88;
   text-transform: none;
@@ -125,7 +127,7 @@
   width: 100%;
   height: 100%;
 }
-@media (max-width: 769px) {
+@media (max-width: 1024px) {
   .info-block .info-body {
     float: right;
     width: 50%;
@@ -149,7 +151,7 @@
   padding-right: 35px;
   overflow: hidden;
 }
-@media (max-width: 769px) {
+@media (max-width: 1024px) {
   .info-block .info-left {
     width: 50%;
     padding-top: 50px;
@@ -184,7 +186,7 @@
   padding-right: 80px;
   padding-left: 35px;
 }
-@media (max-width: 769px) {
+@media (max-width: 1024px) {
   .info-block .info-right {
     display: none;
   }
@@ -192,15 +194,21 @@
 .info-block--horizontal .info-body {
   margin: 0;
 }
-@media (max-width: 769px) {
+@media (max-width: 1024px) {
   .info-block--horizontal .info-body {
     float: none;
     width: 100%;
     height: 50%;
     padding-bottom: 270px;
+    position: relative;
   }
 }
-.info-block--horizontal .info-left {
+@media (max-width: 480px) {
+  .info-block--horizontal .info-body {
+    padding-bottom: 0;
+  }
+}
+.info-block--horizontal .info {
   float: none;
   position: absolute;
   left: 0;
@@ -209,52 +217,82 @@
   padding-right: 35px;
   overflow: hidden;
 }
-.info-block--horizontal .info-left.center {
+.info-block--horizontal .info.center {
   left: 320px;
   width: 350px;
+  padding-left: 35px;
 }
-@media (max-width: 769px) {
-  .info-block--horizontal .info-left {
+.info-block--horizontal .info.center p {
+  margin-bottom: 20px;
+}
+.info-block--horizontal .info.right {
+  left: auto;
+  right: 0;
+  width: 320px;
+  padding-right: 80px;
+  padding-left: 35px;
+}
+@media (max-width: 1024px) {
+  .info-block--horizontal .info,
+  .info-block--horizontal .info.center,
+  .info-block--horizontal .info.right {
     width: 100%;
     height: 270px;
     position: absolute;
     bottom: 0;
     top: auto;
+    left: 0;
     overflow: hidden;
     padding-top: 30px;
     padding-left: 75px;
   }
-  .info-block--horizontal .info-left p {
+  .info-block--horizontal .info p,
+  .info-block--horizontal .info.center p,
+  .info-block--horizontal .info.right p {
     width: 45%;
   }
-  .info-block--horizontal .info-left p:first-of-type {
+  .info-block--horizontal .info p:first-of-type,
+  .info-block--horizontal .info.center p:first-of-type,
+  .info-block--horizontal .info.right p:first-of-type {
     float: left;
   }
-  .info-block--horizontal .info-left p:last-of-type {
+  .info-block--horizontal .info p:last-of-type,
+  .info-block--horizontal .info.center p:last-of-type,
+  .info-block--horizontal .info.right p:last-of-type {
     float: right;
   }
 }
 @media (max-width: 480px) {
-  .info-block--horizontal .info-left {
+  .info-block--horizontal .info,
+  .info-block--horizontal .info.center,
+  .info-block--horizontal .info.right {
     float: none;
     width: 100%;
     padding: 25px 15px;
     height: 165px;
     position: absolute;
     bottom: 0;
+    top: auto;
     overflow: hidden;
   }
-  .info-block--horizontal .info-left h2 {
+  .info-block--horizontal .info h2,
+  .info-block--horizontal .info.center h2,
+  .info-block--horizontal .info.right h2 {
     font-size: 18px;
   }
-  .info-block--horizontal .info-left p {
+  .info-block--horizontal .info p,
+  .info-block--horizontal .info.center p,
+  .info-block--horizontal .info.right p {
+    width: 100%;
     float: none;
     font-size: 14px;
     line-height: 18px;
     margin-bottom: 10px;
     display: none;
   }
-  .info-block--horizontal .info-left p:first-of-type {
+  .info-block--horizontal .info p:first-of-type,
+  .info-block--horizontal .info.center p:first-of-type,
+  .info-block--horizontal .info.right p:first-of-type {
     display: block;
   }
 }
@@ -326,6 +364,12 @@
 .placebox-header:before {
   bottom: 0;
   background: url('../img/g-b.png') no-repeat 50% 0;
+}
+@media (max-width: 480px) {
+  .placebox-header:before {
+    bottom: 0;
+    background: url('../img/g-b2.png') no-repeat 50% 0;
+  }
 }
 .placebox-footer {
   *zoom: 1;
@@ -418,7 +462,7 @@
   height: 565px;
   display: none;
 }
-@media (max-width: 769px) {
+@media (max-width: 1024px) {
   .placebox-slider {
     height: auto;
   }
@@ -433,7 +477,7 @@
   width: 360px;
   height: 565px;
 }
-@media (max-width: 769px) {
+@media (max-width: 1024px) {
   .placebox-slider .item {
     height: auto;
   }
@@ -560,7 +604,7 @@
   max-width: 800px;
   margin: 30px auto;
 }
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
   .program-detail__form {
     width: 100%;
     text-align: center;
@@ -574,7 +618,7 @@
   width: 100%;
   max-width: 385px;
 }
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
   .program-detail__form .hint-wrap {
     max-width: 235px;
   }
@@ -592,7 +636,7 @@
   right: 5px;
   top: 7px;
 }
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
   .program-detail__form .callback__valid {
     right: 5px;
     top: 7px;
@@ -614,7 +658,7 @@
   max-width: 215px;
   text-align: left;
 }
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
   .program-detail__form label {
     display: block;
     max-width: 100%;
@@ -639,7 +683,7 @@
   width: 100%;
   max-width: 385px;
 }
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
   .program-detail__form input {
     max-width: 235px;
   }
@@ -659,7 +703,7 @@
   text-align: center;
   background: url('../img/circle-bg.png') no-repeat center center;
 }
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
   .program-detail__icon {
     color: #447bcb;
     margin-bottom: 15px;
@@ -685,7 +729,7 @@
   margin: 5px 0 0;
   text-align: left;
 }
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
   .program-detail__secret {
     display: none;
   }
@@ -700,7 +744,7 @@
   text-shadow: none;
   margin-top: 6px;
 }
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
   .program-detail__btn.btn {
     border-color: #376bc1;
     text-shadow: none;

@@ -99,6 +99,13 @@
       bottom: 0;
       background: url('../img/g-b.png') no-repeat 50% 0;
     }
+    @media (max-width: 480px) {
+      &:before {
+        bottom: 0;
+        background: url('../img/g-b2.png') no-repeat 50% 0;
+      }
+    }
+
   }
 
   &-footer {
@@ -166,7 +173,7 @@
 .placebox-slider {
   height: 565px;
   display: none;
-  @media (max-width: 769px) {
+  @media (max-width: 1024px) {
     height: auto;
   }
   &.slick-initialized{
@@ -178,7 +185,7 @@
     text-align: center;
     width: 360px;
     height: 565px;
-    @media (max-width: 769px) {
+    @media (max-width: 1024px) {
       height: auto;
     }
     @media (max-width: 480px) {
