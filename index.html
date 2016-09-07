@@ -1181,7 +1181,7 @@
                             </a>
                         </li>
                         <li role="presentation">
-                            <a href="#place-map" aria-controls="place-map" role="tab" data-toggle="tab">
+                            <a href="#place-map" aria-controls="place-map" role="tab" data-toggle="tab" onclick="loadAPI()">
                                 <i class="icon icon-map"></i><br>
                                 <span>карта</span>
                             </a>
@@ -1523,10 +1523,12 @@
 <script type="text/javascript" src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js" charset="utf-8"></script>
 <script src="https://yastatic.net/share2/share.js" charset="utf-8" async="async"></script>
 
-<script async defer
+<!--<script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADrdab7WBrSkUjFxI9p9qUg_0qB9Qt1rE&callback=initMap" async
         defer></script>
-<script src="js/map.js"></script>
+<script src="js/map.js"></script>-->
+<script src="js/load-map.js"></script>
+
 <!— BEGIN JIVOSITE CODE {literal} —>
 <script type='text/javascript'>
     (function () {
