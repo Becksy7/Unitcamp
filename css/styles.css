@@ -203,6 +203,10 @@
 @media (max-width: 480px) {
   .info-block--horizontal .info-body {
     padding-bottom: 0;
+    height: 260px;
+  }
+  .info-block--horizontal .info-body img {
+    height: 100%;
   }
 }
 .info-block--horizontal .info {
@@ -297,6 +301,11 @@
   margin-top: 60px;
   background-color: rgba(27, 47, 62, 0.6);
   color: #fff;
+}
+@media (max-width: 480px) {
+  .placebox {
+    min-height: 570px;
+  }
 }
 .placebox-header {
   height: 90px;
@@ -514,6 +523,7 @@
   .placebox-slider .slick-arrow {
     width: 35px;
     height: 45px;
+    top: 265px;
   }
 }
 .placebox-slider .slick-arrow:before {
